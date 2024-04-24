@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import { Comment } from "../models/comment.models.js";
 import { ApiError } from "../utils/apiError.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
+import { ApiResponse } from "../utils/apiResponse.js";
 
 const getVideoComments = asyncHandler(async (req, res) => {
   // get all comments for the video
